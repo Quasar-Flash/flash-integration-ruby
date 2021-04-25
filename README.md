@@ -21,19 +21,41 @@ Installation for Rails
     # Add to the Gemfile
     gem 'flash_integration', '~> 0.1.0'
 
-Result Example
+Example - How to extend
 -----------------
 
-    #<Flash::Integration::Response:0x0000564181d2bef0
-        @request=#<Flash::Integration::Request:0x0000564181d76a18
-            @method=:post,
-            @url="https://accesstoken.bigdatacorp.com.br/Generate",
-            @params={},
-            @headers={:"Content-Type"=>"application/json", :Accept=>"application/json"},
-            @body="{\"login\":\"username\",\"password\":\"crtvreru\",\"expires\":60000}",
-            @time=2021-04-18 18:55:24.678349974 UTC>,
-            @status=200,
-            @body="{\"expiration\":\"Mon, 21 Feb 2028 18:55:24 GMT\",\"message\":\"Token Generated\",\"success\":true,\"token\":\"xxxxxxxxxxxx\",\"tokenID\":\"0000000000\"}\n", @time=2021-04-18 18:55:24.995163484 UTC>
+    module MyApp
+        class Connection < Flash::Integration::Connection
+            def initialize(base_url: "http://localhost")
+                super(base_url: base_url)
+            end
+
+            def default_headers
+                {
+                    "Accept":       "application/json",
+                    "Content-Type": "application/json"
+                }
+            end
+        end
+    end
+
+Example - How to request
+-----------------
+
+    res = @connection.post(
+        method: :post,
+        url: url,
+        params: {},
+        headers: {},
+        body: body, # except for get
+        multipart: multipart # only for post
+    )
+    res # Flash::Integration::Response type
+    res.request
+    res.status
+    res.headers
+    res.body
+    res.time
 
 Problems?
 -----------------
