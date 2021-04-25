@@ -13,49 +13,57 @@ Dev Requirements
 Global Installation
 -----------------
 
-    gem install flash_integration
+```ruby
+gem install flash_integration
+```
 
 Installation for Rails
 -----------------
 
-    # Add to the Gemfile
-    gem 'flash_integration', '~> 0.1.0'
+```ruby
+# Add to the Gemfile
+gem 'flash_integration', '~> 0.1.0'
+```
 
 Example - How to extend
 -----------------
 
-    module MyApp
-        class Connection < Flash::Integration::Connection
-            def initialize(base_url: "http://localhost")
-                super(base_url: base_url)
-            end
-
-            def default_headers
-                {
-                    "Accept":       "application/json",
-                    "Content-Type": "application/json"
-                }
-            end
-        end
+```ruby
+module MyApp
+  class Connection < Flash::Integration::Connection
+    def initialize(base_url: "http://localhost")
+      super(base_url: base_url)
     end
+
+    def default_headers
+      {
+        "Accept":       "application/json",
+        "Content-Type": "application/json"
+      }
+    end
+  end
+end
+```
 
 Example - How to request
 -----------------
 
-    res = @connection.post(
-        method: :post,
-        url: url,
-        params: {},
-        headers: {},
-        body: body, # except for get
-        multipart: multipart # only for post
-    )
-    res # Flash::Integration::Response type
-    res.request
-    res.status
-    res.headers
-    res.body
-    res.time
+```ruby
+res = @connection.post(
+  method: :post,
+  url: url,
+  params: {},
+  headers: {},
+  body: body, # except for get
+  multipart: multipart # only for post
+)
+res # Flash::Integration::Response type
+res.request
+res.status
+res.headers
+res.body
+res.time
+```
 
 Problems?
 -----------------
