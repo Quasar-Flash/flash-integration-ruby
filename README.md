@@ -2,7 +2,7 @@ BigId Auth's Library for Ruby
 ==============
 
 [![Gem Version](https://badge.fury.io/rb/flash_integration.svg)](https://badge.fury.io/rb/flash_integration)
-[![Build Status](https://travis-ci.com/Quasar-Flash/flash_integration.svg?branch=master)](https://travis-ci.com/Quasar-Flash/flash_integration)
+[![flash_integration](https://github.com/Quasar-Flash/flash_integration/actions/workflows/ruby.yml/badge.svg)](https://github.com/Quasar-Flash/flash_integration/actions/workflows/ruby.yml)
 
 Dev Requirements
 -----------------
