@@ -9,7 +9,7 @@ Gem::Specification.new do |s|
   s.platform    = Gem::Platform::RUBY
   s.authors     = ["Danilo Carolino"]
   s.email       = ["danilo.carolino@qflash.com.br"]
-  s.homepage    = "https://github.com/Quasar-Flash/flash-integration-ruby"
+  s.homepage    = "https://github.com/Quasar-Flash/flash_integration"
   s.summary     = "Flash Integration Library"
   s.description = "A library to make easily to build integrations"
   s.required_ruby_version = ">= 2.5"
@@ -17,9 +17,9 @@ Gem::Specification.new do |s|
   s.test_files = Dir["spec/**/*"]
   s.license = "MIT"
 
-  s.metadata["changelog_uri"] = "https://github.com/Quasar-Flash/flash-integration-ruby/blob/master/CHANGELOG.md"
-  s.metadata["source_code_uri"] = "https://github.com/Quasar-Flash/flash-integration-ruby"
-  s.metadata["bug_tracker_uri"] = "https://github.com/Quasar-Flash/flash-integration-ruby/issues"
+  s.metadata["changelog_uri"] = "https://github.com/Quasar-Flash/flash_integration/blob/master/CHANGELOG.md"
+  s.metadata["source_code_uri"] = "https://github.com/Quasar-Flash/flash_integration"
+  s.metadata["bug_tracker_uri"] = "https://github.com/Quasar-Flash/flash_integration/issues"
 
   s.add_dependency             "faraday", "~> 1.4.1", ">= 1.0"
 

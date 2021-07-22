@@ -2,7 +2,7 @@ BigId Auth's Library for Ruby
 ==============
 
 [![Gem Version](https://badge.fury.io/rb/flash_integration.svg)](https://badge.fury.io/rb/flash_integration)
-[![Build Status](https://travis-ci.com/Quasar-Flash/flash-integration-ruby.svg?branch=master)](https://travis-ci.com/Quasar-Flash/flash-integration-ruby)
+[![Build Status](https://travis-ci.com/Quasar-Flash/flash_integration.svg?branch=master)](https://travis-ci.com/Quasar-Flash/flash_integration)
 
 Dev Requirements
 -----------------
@@ -70,7 +70,7 @@ Problems?
 
 **Please do not directly email any committers with questions or problems.**  A community is best served when discussions are held in public.
 
-Searching the [issues](https://github.com/Quasar-Flash/flash-integration-ruby/issues) for your problem is also a good idea.
+Searching the [issues](https://github.com/Quasar-Flash/flash_integration/issues) for your problem is also a good idea.
 
 Contributing
 -----------------
@@ -86,7 +86,7 @@ Contributing
 License
 -----------------
 
-Please see [LICENSE](https://github.com/Quasar-Flash/flash-integration-ruby/blob/master/LICENSE.txt) for licensing details.
+Please see [LICENSE](https://github.com/Quasar-Flash/flash_integration/blob/master/LICENSE.txt) for licensing details.
 
 Authors
 -----------------

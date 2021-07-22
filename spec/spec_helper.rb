@@ -1,5 +1,16 @@
 # frozen_string_literal: true
 
+require "simplecov"
+
+SimpleCov.formatters = [SimpleCov::Formatter::HTMLFormatter]
+SimpleCov.minimum_coverage 70.0
+
+SimpleCov.start do
+  add_filter "/spec/"
+  minimum_coverage 70
+  minimum_coverage_by_file 40
+end
+
 require "rubygems"
 require "bundler"
 require "pry"
@@ -12,12 +23,6 @@ rescue Bundler::BundlerError => e
   warn "Run `bundle install` to install missing gems"
 
   exit e.status_code
-end
-
-require "simplecov"
-
-SimpleCov.start do
-  add_filter "spec"
 end
 
 RSpec.configure do |config|
