@@ -12,7 +12,7 @@ Gem::Specification.new do |s|
   s.homepage    = "https://github.com/Quasar-Flash/flash_integration"
   s.summary     = "Flash Integration Library"
   s.description = "A library to make easily to build integrations"
-  s.required_ruby_version = ">= 2.5"
+  s.required_ruby_version = ">= 2.7"
   s.files = Dir["{lib}/**/*"] + ["LICENSE", "Rakefile", "README.md", "CHANGELOG.md"]
   s.test_files = Dir["spec/**/*"]
   s.license = "MIT"
@@ -23,13 +23,13 @@ Gem::Specification.new do |s|
 
   s.add_dependency             "faraday", ">= 1.4.1", "< 1.9.0"
 
-  s.add_development_dependency "bundler", ">= 1.1.0"
-  s.add_development_dependency "pry", "~> 0.14.1"
-  s.add_development_dependency "rake", "~> 13.0", ">= 10.0.0"
-  s.add_development_dependency "rspec", "~> 3.10.0"
-  s.add_development_dependency "rubocop", "~> 1.23.0"
-  s.add_development_dependency "rubocop-packaging", "~> 0.5.1"
-  s.add_development_dependency "rubocop-performance", "~> 1.12.0"
-  s.add_development_dependency "rubocop-rspec", "~> 2.6.0"
-  s.add_development_dependency "simplecov", "~> 0.21.0"
+  s.add_development_dependency "bundler", ">= 1.2"
+  s.add_development_dependency "pry", "~> 0.14"
+  s.add_development_dependency "rake", "~> 13.0", ">= 10.0"
+  s.add_development_dependency "rspec", "~> 3.10"
+  s.add_development_dependency "rubocop", "~> 1.25"
+  s.add_development_dependency "rubocop-packaging", "~> 0.5"
+  s.add_development_dependency "rubocop-performance", "~> 1.13"
+  s.add_development_dependency "rubocop-rspec", "~> 2.8"
+  s.add_development_dependency "simplecov", "~> 0.21"
 end

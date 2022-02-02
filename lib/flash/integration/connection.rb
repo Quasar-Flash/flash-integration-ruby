@@ -13,50 +13,50 @@ module Flash
       def get(url: "", params: {}, headers: {})
         send_request(
           method: :get,
-          url: url,
-          params: params,
-          headers: headers
+          url:,
+          params:,
+          headers:
         )
       end
 
       def post(url: "", params: {}, headers: {}, body: {}, multipart: false)
         send_request(
           method: :post,
-          url: url,
-          params: params,
-          headers: headers,
-          body: body,
-          multipart: multipart
+          url:,
+          params:,
+          headers:,
+          body:,
+          multipart:
         )
       end
 
       def put(url: "", params: {}, headers: {}, body: {})
         send_request(
           method: :put,
-          url: url,
-          params: params,
-          headers: headers,
-          body: body
+          url:,
+          params:,
+          headers:,
+          body:
         )
       end
 
       def patch(url: "", params: {}, headers: {}, body: {})
         send_request(
           method: :patch,
-          url: url,
-          params: params,
-          headers: headers,
-          body: body
+          url:,
+          params:,
+          headers:,
+          body:
         )
       end
 
       def delete(url: "", params: {}, headers: {}, body: {})
         send_request(
           method: :delete,
-          url: url,
-          params: params,
-          headers: headers,
-          body: body
+          url:,
+          params:,
+          headers:,
+          body:
         )
       end
 
@@ -95,21 +95,21 @@ module Flash
 
         def build_request(method, url, params, headers, body)
           Flash::Integration::Request.new(
-            method: method,
-            url: url,
-            params: params,
-            headers: headers,
-            body: body,
+            method:,
+            url:,
+            params:,
+            headers:,
+            body:,
             time: Time.now.utc
           )
         end
 
         def build_response(request, status, headers, body)
           Flash::Integration::Response.new(
-            request: request,
-            status: status,
-            headers: headers,
-            body: body,
+            request:,
+            status:,
+            headers:,
+            body:,
             time: Time.now.utc
           )
         end
