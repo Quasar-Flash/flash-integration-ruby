@@ -1,13 +1,16 @@
 name: flash_integration
 
 on:
+  workflow_dispatch:
   push:
-    branches: '*'
+    branches:
+      - master
   pull_request:
     branches:  '*'
 
 jobs:
   pipeline:
+    if: ${{ github.actor != 'dependabot[bot]' }}
     runs-on: ubuntu-latest
     steps:
     - name: Checkout
@@ -16,7 +19,7 @@ jobs:
     - name: Setup Ruby
       uses: ruby/setup-ruby@v1
       with:
-        ruby-version: '3.0.2'
+        ruby-version: '3.1.0'
 
     - name: Run Install
       run: |
