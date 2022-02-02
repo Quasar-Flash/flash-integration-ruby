@@ -13,8 +13,12 @@ end
 
 require "rubygems"
 require "bundler"
-require "pry"
 require "flash_integration"
+require "pry"
+
+Dir["./spec/support/**/*.rb"].each { |f| require f }
+Dir["./spec/initializers/**/*.rb"].each { |f| require f }
+Dir["./lib/**/*.rb"].sort.each { |file| require file }
 
 begin
   Bundler.setup(:default, :development, :test)

@@ -1,8 +1,5 @@
 # frozen_string_literal: true
 
-require "spec_helper"
-require "flash_integration"
-
 RSpec.describe Flash::Integration do
   describe ".configure" do
     before do

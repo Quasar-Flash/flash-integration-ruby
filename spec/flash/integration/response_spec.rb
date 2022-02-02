@@ -1,7 +1,5 @@
 # frozen_string_literal: true
 
-require "spec_helper"
-
 describe Flash::Integration::Response do
   let(:request) { double("request") }
   let(:instance) { described_class.new(request:, status:) }

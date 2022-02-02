@@ -1,7 +1,5 @@
 # frozen_string_literal: true
 
-require "spec_helper"
-
 describe Flash::Integration::Connection do
   let(:base_url) { "http://localhost" }
   let(:connection) { Faraday::Connection.new(url: base_url) }
