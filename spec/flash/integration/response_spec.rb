@@ -4,7 +4,7 @@ require "spec_helper"
 
 describe Flash::Integration::Response do
   let(:request) { double("request") }
-  let(:instance) { described_class.new(request: request, status: status) }
+  let(:instance) { described_class.new(request:, status:) }
 
   describe "#success?" do
     subject { instance.success? }
