@@ -1,6 +1,6 @@
 # CHANGELOG
 
-## v0.1.1-20220202 - Danilo Carolino
+## v0.1.2-20220202 - Danilo Carolino
 
 * [QC-79](https://qflash.atlassian.net/jira/software/projects/QC/boards/31?selectedIssue=QC-79)
 Reduzir uso de pipelines em projetos Ruby [Dependabot]
