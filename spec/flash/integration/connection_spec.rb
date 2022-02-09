@@ -3,7 +3,7 @@
 describe Flash::Integration::Connection do
   let(:base_url) { "http://localhost" }
   let(:connection) { Faraday::Connection.new(url: base_url) }
-  let(:instance) { described_class.new(request_class:, base_url:) }
+  let(:instance) { described_class.new(request_class: request_class, base_url: base_url) }
   let(:request_params) { double("request-params") }
   let(:request_class) { class_double(Faraday, default_adapter: double("request-params")) }
   let(:request_headers) { {} }
@@ -17,7 +17,7 @@ describe Flash::Integration::Connection do
   let(:response) do
     double(
       "response",
-      request:,
+      request: request,
       status: response_status,
       headers: response_headers,
       body: response_body
@@ -30,7 +30,7 @@ describe Flash::Integration::Connection do
       params: request_params,
       headers: request_headers,
       body: request_body,
-      time:
+      time: time
     )
   end
 

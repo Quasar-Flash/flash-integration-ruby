@@ -2,7 +2,7 @@
 
 describe Flash::Integration::Response do
   let(:request) { double("request") }
-  let(:instance) { described_class.new(request:, status:) }
+  let(:instance) { described_class.new(request: request, status: status) }
 
   describe "#success?" do
     subject { instance.success? }
