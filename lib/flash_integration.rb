@@ -3,7 +3,6 @@
 require "faraday"
 
 require "flash/integration/version"
-require "flash/integration/multipart_flat"
 require "flash/integration/response"
 require "flash/integration/request"
 require "flash/integration/connection"

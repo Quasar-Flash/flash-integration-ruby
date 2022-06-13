@@ -22,7 +22,7 @@ Installation for Rails
 
 ```ruby
 # Add to the Gemfile
-gem 'flash_integration', '~> 0.1.0'
+gem 'flash_integration', '~> 1.0.0'
 ```
 
 Example - How to extend

@@ -24,12 +24,12 @@ Gem::Specification.new do |s|
   s.add_dependency             "faraday", ">= 1.4.1", "< 2.4.0"
 
   s.add_development_dependency "bundler", ">= 1.2"
-  s.add_development_dependency "pry", "~> 0.14"
+  s.add_development_dependency "pry", "~> 0.14.1"
   s.add_development_dependency "rake", "~> 13.0", ">= 10.0"
-  s.add_development_dependency "rspec", "~> 3.10"
-  s.add_development_dependency "rubocop", "~> 1.25"
-  s.add_development_dependency "rubocop-packaging", "~> 0.5"
-  s.add_development_dependency "rubocop-performance", "~> 1.13"
-  s.add_development_dependency "rubocop-rspec", "~> 2.8"
+  s.add_development_dependency "rspec", "~> 3.11.0"
+  s.add_development_dependency "rubocop", "~> 1.30.1"
+  s.add_development_dependency "rubocop-packaging", "~> 0.5.1"
+  s.add_development_dependency "rubocop-performance", "~> 1.14.2"
+  s.add_development_dependency "rubocop-rspec", "~> 2.11.1"
   s.add_development_dependency "simplecov", "~> 0.21"
 end

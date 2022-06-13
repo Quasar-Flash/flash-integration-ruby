@@ -1,17 +1,33 @@
-# CHANGELOG
+# Changelog
 
-## v0.1.2.1-20220209 - Danilo Carolino
+All notable changes to this project will be documented in this file.
 
-Fixes
+The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
+and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
-* [32](https://github.com/Quasar-Flash/flash_integration/issues/32) HashSyntax with EnforcedShorthandSyntax as always
+## [Unreleased]
 
-## v0.1.2-20220202 - Danilo Carolino
+## [1.0.0] - 2022-06-13
 
-* [QC-79](https://qflash.atlassian.net/jira/software/projects/QC/boards/31?selectedIssue=QC-79)
+### Changed
+
+- Bump `faraday` version from >= 1.4.1, < 1.9.0 to >= 1.4.1, < 2.4.0
+
+## [0.1.3] - 2022-02-09
+
+### Fixed
+
+- HashSyntax with EnforcedShorthandSyntax as always #32
+
+## [0.1.2] - 2022-02-02
+
+### Changed
+
+- [QC-79](https://qflash.atlassian.net/jira/software/projects/QC/boards/31?selectedIssue=QC-79)
 Reduzir uso de pipelines em projetos Ruby [Dependabot]
-* Bump Ruby version to v3.1.0
 
-## v0.1.0
+## [0.1.0]
 
-* Initial release
+### Added
+
+- Initial release

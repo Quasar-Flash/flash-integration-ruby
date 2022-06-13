@@ -87,7 +87,7 @@ module Flash
 
         def multipart_connection
           @request_class.new(url: @base_url) do |conn|
-            conn.use Flash::Integration::MultipartFlat
+            conn.request :multipart
             conn.request :url_encoded
             conn.adapter @request_class.default_adapter
           end
