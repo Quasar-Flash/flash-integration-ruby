@@ -1,5 +1,6 @@
-BigId Auth's Library for Ruby
-==============
+# Flash Integration
+
+A Faraday's extension to make it easier to create integrations.
 
 [![Gem Version](https://badge.fury.io/rb/flash_integration.svg)](https://badge.fury.io/rb/flash_integration)
 [![Build](https://github.com/Quasar-Flash/flash_integration/actions/workflows/tests.yml/badge.svg)](https://github.com/Quasar-Flash/flash_integration/actions/workflows/tests.yml)
