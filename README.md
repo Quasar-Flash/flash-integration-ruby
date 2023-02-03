@@ -5,29 +5,25 @@ A Faraday's extension to make it easier to create integrations.
 [![Gem Version](https://badge.fury.io/rb/flash_integration.svg)](https://badge.fury.io/rb/flash_integration)
 [![Build](https://github.com/Quasar-Flash/flash_integration/actions/workflows/tests.yml/badge.svg)](https://github.com/Quasar-Flash/flash_integration/actions/workflows/tests.yml)
 
-Dev Requirements
------------------
+## Dev Requirements
 
 - Ruby: Any version
 - Bundler
 
-Global Installation
------------------
+## Global Installation
 
 ```ruby
 gem install flash_integration
 ```
 
-Installation for Rails
------------------
+## Installation for Rails
 
 ```ruby
 # Add to the Gemfile
 gem 'flash_integration', '~> 1.0.0'
 ```
 
-Example - How to extend
------------------
+## Example - How to extend
 
 ```ruby
 module MyApp
@@ -46,8 +42,7 @@ module MyApp
 end
 ```
 
-Example - How to request
------------------
+## Example - How to request
 
 ```ruby
 res = @connection.post(
@@ -66,15 +61,13 @@ res.body
 res.time
 ```
 
-Problems?
------------------
+## Problems?
 
 **Please do not directly email any committers with questions or problems.**  A community is best served when discussions are held in public.
 
 Searching the [issues](https://github.com/Quasar-Flash/flash_integration/issues) for your problem is also a good idea.
 
-Contributing
------------------
+## Contributing
 
 - Check out the latest master to make sure the feature hasn't been implemented or the bug hasn't been fixed yet;
 - Check out the issue tracker to make sure someone already hasn't requested it and/or contributed it;
@@ -84,12 +77,10 @@ Contributing
 - Make sure to add tests for it. This is important so I don't break it in a future version unintentionally.;
 - Please try not to mess with the Rakefile, version, or history. If you want to have your own version, or is otherwise necessary, that is fine, but please isolate to its own commit so I can cherry-pick around it.
 
-License
------------------
+## License
 
 Please see [LICENSE](https://github.com/Quasar-Flash/flash_integration/blob/master/LICENSE.txt) for licensing details.
 
-Authors
------------------
+## Authors
 
 Danilo Carolino, [@danilogco](https://github.com/danilogco) / [@Quasar-Flash](https://github.com/Quasar-Flash)
