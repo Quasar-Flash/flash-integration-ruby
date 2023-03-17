@@ -22,6 +22,7 @@ Gem::Specification.new do |s|
   s.metadata["bug_tracker_uri"] = "https://github.com/Quasar-Flash/flash_integration/issues"
 
   s.add_dependency             "faraday", ">= 1.4.1", "< 2.8.0"
+  s.add_dependency             "faraday-multipart", "~> 1.0.4", "> 1.0.0"
 
   s.add_development_dependency "bundler", ">= 1.2"
   s.add_development_dependency "pry", "~> 0.14.1"
