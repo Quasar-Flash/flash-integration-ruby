@@ -63,7 +63,7 @@ res.time
 
 ## Problems?
 
-**Please do not directly email any committers with questions or problems.**  A community is best served when discussions are held in public.
+**Please do not directly email any committers with questions or problems.** A community is best served when discussions are held in public.
 
 Searching the [issues](https://github.com/Quasar-Flash/flash_integration/issues) for your problem is also a good idea.
 
